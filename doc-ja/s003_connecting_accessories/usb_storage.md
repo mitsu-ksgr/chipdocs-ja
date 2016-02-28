@@ -6,5 +6,5 @@
 変更・使用したいファイル、またはCHIPの内部ストレージに転送したいファイルがある場合、USBサムドライブを接続することが出来ます。
 ファイルマネージャを開き、ファイルにアクセスします。
 
-![USB drive attatched to CHIP](http://docs.getchip.com/images/chip_usbstorage.jpg)
+![USB drive attatched to CHIP](./../images/chip_usbstorage.jpg)
 

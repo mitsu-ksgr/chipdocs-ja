@@ -18,7 +18,7 @@ CHIPの底を、オーディオジャックとUSBジャックに注目して見�
 それを切断すれば（電圧や導通テスタで確認してください）、**mic**パッドと中央パッドを半田で接続することが出来ます。
 そうすれば、TRRSジャックを音声入力のために使用することが出来るようになります。
 
-![Slice video trace, bridge mic in pad](http://docs.getchip.com/images/chip_audioinbridge.jpg)
+![Slice video trace, bridge mic in pad](./../images/chip_audioinbridge.jpg)
 
 > As another reference, if you had X-ray vision and you were looking from the **top** of CHIP, you'd see a trace like this:
 
@@ -26,7 +26,7 @@ CHIPの底を、オーディオジャックとUSBジャックに注目して見�
 あなたに透視能力が備わっている場合は
 CHIPを上から見て、このようなトレースを参照してくださいね。
 
-![Xray vision of TV and Mic traces from top of CHIP](http://docs.getchip.com/images/chip_tvmonxray.jpg)
+![Xray vision of TV and Mic traces from top of CHIP](./../images/chip_tvmonxray.jpg)
 
 > If the composite video connection is needed again, just reverse the process: desolder the connection between **mic** and the middle pad, then solder a bridge between **tv** and the middle pad.
  

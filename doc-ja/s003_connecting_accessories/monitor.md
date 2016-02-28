@@ -9,14 +9,14 @@ CHIPは「物事は小さく保つ」の精神に則って、小さなTRRSコネ
 内臓ビデオ出力は、標準コンポジットビデオ解像度である 640x480 に制限されています。
 （いずれ登場するVGAとDVI出力のアクセサリーでより高い解像度を達成できるでしょう。）
 
-![monitor connected to CHIP](http://docs.getchip.com/images/chip_withmonitor.jpg)
+![monitor connected to CHIP](./../images/chip_withmonitor.jpg)
 
 
 > Here's what the other end of the cable looks like, attached to a monitor with stereo audio inputs (red and white) and the composite video plug, moved so you can see the label on the monitor:
 
 ケーブルのもう一端は次のようになっており、ステレオオーディオ入力（赤と白）とコンポジット端子をモニターに接続すると、モニター上を動くラベルを確認できるようになります。
 
-![monitor connected to CHIP](http://docs.getchip.com/images/chip_withmonitor_cnxn.jpg)
+![monitor connected to CHIP](./../images/chip_withmonitor_cnxn.jpg)
 
 
 ### TRRS端子について
@@ -25,7 +25,7 @@ CHIPは「物事は小さく保つ」の精神に則って、小さなTRRSコネ
 
 CHIPには、1/8"(3.5mm) TRRS(Tip-Ring-Ring-Sleeve)ジャックが付属しており、ステレオオーディオと、コンポジットビデオ出力かマイク入力のいずれかを運ぶ事ができます。
 
-![Typical AV cable that carries stereo audio and composite video](http://docs.getchip.com/images/avcable.jpg)
+![Typical AV cable that carries stereo audio and composite video](./../images/avcable.jpg)
 
 > This is a fairly common port, but there are a few different arrangements of the conductors, so not all cables are equal.
 > Fortunately, CHIP uses the same conductor arrangement as Pi, Zune, and iPod audio/video cables, so the most common "mini to RCA A/V" cables should work just fine.
@@ -52,7 +52,7 @@ CHIPには、1/8"(3.5mm) TRRS(Tip-Ring-Ring-Sleeve)ジャックが付属して�
 
 TRRS端子の導体は、次のように配置されています：
 
-![Tip: Audio Left, Ring: Audio Right, Ring: Ground, Sleeve: Video](http://docs.getchip.com/images/trrs_annotated.jpg)
+![Tip: Audio Left, Ring: Audio Right, Ring: Ground, Sleeve: Video](./../images/trrs_annotated.jpg)
 
 > If you want to learn even more about TRRS connectors and the general lack of standardization with them, [this page](http://wiki.robotz.com/index.php/TRRS_Phono_Plug) has even more details.
 

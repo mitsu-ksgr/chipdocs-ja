@@ -10,5 +10,5 @@ CHIPのA/Vジャックに、標準3.5mm(1/8") TRSオーディオプラグを接�
 もちろん、ヘッドフォンが接続されている場合には、コンポジットビデオ出力ジャックを挿す余地はありません。  
 また、[ヘッダU14上の４・６・８のピン](http://docs.getchip.com/#pin-headers)から、オーディオ左・共通・オーディオ右の出力を得ることが出来ます。
 
-![CHIP connected to headphones](http://docs.getchip.com/images/chip_withaudio.jpg)
+![CHIP connected to headphones](./../images/chip_withaudio.jpg)
 

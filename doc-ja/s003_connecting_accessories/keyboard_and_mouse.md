@@ -8,5 +8,5 @@
 しかしながら、これでは２つの端末だけで、多くの電力を使ってしまう可能性があります。
 なので、そうなる前に、電源付きのUSBハブに接続しましょう。
 
-![keyboard, mouse, and powered USB hub connected to CHIP](http://docs.getchip.com/images/chip_usbconnections.jpg)
+![keyboard, mouse, and powered USB hub connected to CHIP](./../images/chip_usbconnections.jpg)
 

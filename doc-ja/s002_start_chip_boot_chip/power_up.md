@@ -54,7 +54,7 @@ CHIPのmicro-USB端子は、ほとんど全てのUSB電源から電力を供給�
 USB-A/microUSB-B変換ケーブル（それは殆どのスマートフォンやタブレット、その他諸々を充電するものと同じケーブルです）を使って電源とCHIPを繋げると、`PWR`のLEDが明るく光るのを確認できるでしょう。
 以下のように、CHIPはコンピュータのUSBポートの電力でも使うことができます。
 
-![CHIP indicator LEDs](http://docs.getchip.com/images/chip_ledon.jpg)
+![CHIP indicator LEDs](./../images/chip_ledon.jpg)
 
 
 ### バッテリー電源
@@ -65,7 +65,7 @@ USB-A/microUSB-B変換ケーブル（それは殆どのスマートフォンや�
 CHIPはバッテリー電源でも動作します。
 具体的にいうと、2ピン2.0mmピッチのJST-PH端子の付いた品単一セル(1S) 3.7V LiPoバッテリーを、JST-PHソケットに接続できます。
 
-![CHIP powered by a battery. Slick!](http://docs.getchip.com/images/chip_battery.jpg)
+![CHIP powered by a battery. Slick!](./../images/chip_battery.jpg)
 
 > The JST can only plug it in one way: if you are having a hard time lining things up, turn it around! Needless to say, do not force the battery connector into the socket if something doesn't feel right!
 > 

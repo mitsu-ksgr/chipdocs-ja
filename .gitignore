@@ -1,2 +1,10 @@
+# mac
+.DS_Store
 
+# thumbnails
+._*
+
+# gitbook
 doc-ja/_book/*
+
+
