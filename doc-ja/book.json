@@ -1,0 +1,9 @@
+{
+    "title": "C.H.I.P. ドキュメント 日本語訳",
+    "description": "\"Next Thing C.H.I.P. Documentation\"の日本語訳（のつもり）です。",
+
+    "language": "ja",
+    "structure": {
+        "readme": "README.md"
+    }
+}
