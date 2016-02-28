@@ -1,0 +1,1374 @@
+<!DOCTYPE HTML>
+<html lang="ja" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>WiFi Connection | C.H.I.P. ドキュメント 日本語訳</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../s007_advanced/configure_sound_output_on_debian.html" />
+    
+    
+    <link rel="prev" href="../s007_advanced/setup_ubuntu_for_flashing.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="7.4"
+        data-chapter-title="WiFi Connection"
+        data-filepath="s007_advanced/wifi_connection.md"
+        data-basepath=".."
+        data-revision="Mon Feb 29 2016 07:02:33 GMT+0900 (JST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        はじめに
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="s001_welcome_to_the_chip_operating_system/index.html">
+            
+                
+                    <a href="../s001_welcome_to_the_chip_operating_system/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        CHIP OSへようこそ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="s002_start_chip_boot_chip/index.html">
+            
+                
+                    <a href="../s002_start_chip_boot_chip/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        CHIPを始める. CHIPを起動する.
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="s002_start_chip_boot_chip/power_up.html">
+            
+                
+                    <a href="../s002_start_chip_boot_chip/power_up.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        電源を入れる
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="s002_start_chip_boot_chip/connect_to_wifi.html">
+            
+                
+                    <a href="../s002_start_chip_boot_chip/connect_to_wifi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        WiFiに接続する
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="s002_start_chip_boot_chip/connect_bluetooth.html">
+            
+                
+                    <a href="../s002_start_chip_boot_chip/connect_bluetooth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Bluetooth接続
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="s002_start_chip_boot_chip/using_the_terminal.html">
+            
+                
+                    <a href="../s002_start_chip_boot_chip/using_the_terminal.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        ターミナルを使う
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="s002_start_chip_boot_chip/terminal_for_beginners_glossary.html">
+            
+                
+                    <a href="../s002_start_chip_boot_chip/terminal_for_beginners_glossary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        ターミナル初心者向け用語集
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="s003_connecting_accessories/index.html">
+            
+                
+                    <a href="../s003_connecting_accessories/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        アクセサリを接続する
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="s003_connecting_accessories/recommended_accessories.html">
+            
+                
+                    <a href="../s003_connecting_accessories/recommended_accessories.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        オススメのアクセサリ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="s003_connecting_accessories/powered_usb_hub.html">
+            
+                
+                    <a href="../s003_connecting_accessories/powered_usb_hub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        電源付きUSBハブ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="s003_connecting_accessories/keyboard_and_mouse.html">
+            
+                
+                    <a href="../s003_connecting_accessories/keyboard_and_mouse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        キーボードとマウス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="s003_connecting_accessories/bluetooth_keyboard_and_mouse.html">
+            
+                
+                    <a href="../s003_connecting_accessories/bluetooth_keyboard_and_mouse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Bluetooth接続のキーボード・マウス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="s003_connecting_accessories/monitor.html">
+            
+                
+                    <a href="../s003_connecting_accessories/monitor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        モニター
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="s003_connecting_accessories/headphones.html">
+            
+                
+                    <a href="../s003_connecting_accessories/headphones.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        ヘッドフォン
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="s003_connecting_accessories/microphone_and_audio_input.html">
+            
+                
+                    <a href="../s003_connecting_accessories/microphone_and_audio_input.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        マイクとオーディオ入力
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="s003_connecting_accessories/usb_storage.html">
+            
+                
+                    <a href="../s003_connecting_accessories/usb_storage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        USBストレージ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="s003_connecting_accessories/usb_audio.html">
+            
+                
+                    <a href="../s003_connecting_accessories/usb_audio.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        USBオーディオ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="s003_connecting_accessories/battery_and_charging.html">
+            
+                
+                    <a href="../s003_connecting_accessories/battery_and_charging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        バッテリーと充電
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="s004_using_the_chip_operating_system/index.html">
+            
+                
+                    <a href="../s004_using_the_chip_operating_system/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Using The CHIP Operating System
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="s004_using_the_chip_operating_system/settings_and_configuration.html">
+            
+                
+                    <a href="../s004_using_the_chip_operating_system/settings_and_configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Settings and Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="s004_using_the_chip_operating_system/launching_installed_apps.html">
+            
+                
+                    <a href="../s004_using_the_chip_operating_system/launching_installed_apps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Launching Installed Apps
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="s004_using_the_chip_operating_system/install_and_update_software.html">
+            
+                
+                    <a href="../s004_using_the_chip_operating_system/install_and_update_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Install and Update Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="s004_using_the_chip_operating_system/uninstall_software.html">
+            
+                
+                    <a href="../s004_using_the_chip_operating_system/uninstall_software.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Uninstall Software
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="s004_using_the_chip_operating_system/boot_into_console.html">
+            
+                
+                    <a href="../s004_using_the_chip_operating_system/boot_into_console.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Boot into Console
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="s005_chip_hardware/index.html">
+            
+                
+                    <a href="../s005_chip_hardware/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        CHIP Hardware
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="s005_chip_hardware/parts_and_pieces.html">
+            
+                
+                    <a href="../s005_chip_hardware/parts_and_pieces.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Parts and Pieces
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="s005_chip_hardware/wireless.html">
+            
+                
+                    <a href="../s005_chip_hardware/wireless.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Wireless
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="s005_chip_hardware/physical_connectors.html">
+            
+                
+                    <a href="../s005_chip_hardware/physical_connectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Physical Connectors
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="s005_chip_hardware/open_source_hardware_where_to_get_it.html">
+            
+                
+                    <a href="../s005_chip_hardware/open_source_hardware_where_to_get_it.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Open Source Hardware: Where To Get It
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="s006_making_stuff/index.html">
+            
+                
+                    <a href="../s006_making_stuff/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Making Stuff
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="s006_making_stuff/gpio.html">
+            
+                
+                    <a href="../s006_making_stuff/gpio.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        GPIO
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="s006_making_stuff/python_library.html">
+            
+                
+                    <a href="../s006_making_stuff/python_library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Python Library
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="s006_making_stuff/gpio_types.html">
+            
+                
+                    <a href="../s006_making_stuff/gpio_types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        GPIO Types
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="s006_making_stuff/expanding_gpio.html">
+            
+                
+                    <a href="../s006_making_stuff/expanding_gpio.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Expanding GPIO
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="s006_making_stuff/analog_to_digital_conversion.html">
+            
+                
+                    <a href="../s006_making_stuff/analog_to_digital_conversion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        Analog to Digital Conversion
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="s006_making_stuff/1_wire.html">
+            
+                
+                    <a href="../s006_making_stuff/1_wire.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        1 Wire
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="s006_making_stuff/uart.html">
+            
+                
+                    <a href="../s006_making_stuff/uart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        UART
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="s006_making_stuff/pwm.html">
+            
+                
+                    <a href="../s006_making_stuff/pwm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        PWM
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="s006_making_stuff/i2c.html">
+            
+                
+                    <a href="../s006_making_stuff/i2c.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        I2C
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="s006_making_stuff/lcd_monitor_support.html">
+            
+                
+                    <a href="../s006_making_stuff/lcd_monitor_support.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        LCD Monitor Support
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="s006_making_stuff/project_examples.html">
+            
+                
+                    <a href="../s006_making_stuff/project_examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        Project Examples
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="s007_advanced/index.html">
+            
+                
+                    <a href="../s007_advanced/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Advanced
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="s007_advanced/installing_chip_sdk.html">
+            
+                
+                    <a href="../s007_advanced/installing_chip_sdk.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Installing C.H.I.P. SDK
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="s007_advanced/flash_chip_firmware.html">
+            
+                
+                    <a href="../s007_advanced/flash_chip_firmware.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Flash CHIP Firmware
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="s007_advanced/setup_ubuntu_for_flashing.html">
+            
+                
+                    <a href="../s007_advanced/setup_ubuntu_for_flashing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Setup Ubuntu For Flashing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.4" data-path="s007_advanced/wifi_connection.html">
+            
+                
+                    <a href="../s007_advanced/wifi_connection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        WiFi Connection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="s007_advanced/configure_sound_output_on_debian.html">
+            
+                
+                    <a href="../s007_advanced/configure_sound_output_on_debian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        Configure Sound Output on Debian
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="s007_advanced/usb_storage_devices.html">
+            
+                
+                    <a href="../s007_advanced/usb_storage_devices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        USB Storage Devices
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="s007_advanced/connecting_bluetooth_devices.html">
+            
+                
+                    <a href="../s007_advanced/connecting_bluetooth_devices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        Connecting Bluetooth Devices
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="s007_advanced/install_x_windows.html">
+            
+                
+                    <a href="../s007_advanced/install_x_windows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        Install X-windows
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="s007_advanced/building_and_installing_puredata_on_chip.html">
+            
+                
+                    <a href="../s007_advanced/building_and_installing_puredata_on_chip.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        Building and Installing PureData (PD) on CHIP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="s007_advanced/headless_chip.html">
+            
+                
+                    <a href="../s007_advanced/headless_chip.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        Headless CHIP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="s007_advanced/zero_configuration_networking.html">
+            
+                
+                    <a href="../s007_advanced/zero_configuration_networking.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        Zero Configuration Networking
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="s008_chip_boot_repair_tool/index.html">
+            
+                
+                    <a href="../s008_chip_boot_repair_tool/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        CHIP Boot Repair Tool
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="s008_chip_boot_repair_tool/things_you_will_need.html">
+            
+                
+                    <a href="../s008_chip_boot_repair_tool/things_you_will_need.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Things you will need
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="s008_chip_boot_repair_tool/for_ubuntu_14.4.html">
+            
+                
+                    <a href="../s008_chip_boot_repair_tool/for_ubuntu_14.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        For Ubuntu 14.4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="s008_chip_boot_repair_tool/for_windows_7_8_10.html">
+            
+                
+                    <a href="../s008_chip_boot_repair_tool/for_windows_7_8_10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        For Windows 7, 8, &amp; 10
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="s008_chip_boot_repair_tool/for_mac_os_x_10.10_10.11.html">
+            
+                
+                    <a href="../s008_chip_boot_repair_tool/for_mac_os_x_10.10_10.11.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        For Mac OS X 10.10 (Yosemite) and 10.11 (El Capitan)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="s009_faqs/index.html">
+            
+                
+                    <a href="../s009_faqs/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        FAQs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="s010_troubleshooting/index.html">
+            
+                
+                    <a href="../s010_troubleshooting/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Troubleshooting
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="s011_compliance_statement/index.html">
+            
+                
+                    <a href="../s011_compliance_statement/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Compliance Statement
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    GitBookで公開 
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >C.H.I.P. ドキュメント 日本語訳</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="wifi-connection">WiFi Connection</h2>
+<p>Below are detailed instructions for connecting to Wi-Fi networks using two different command line protocols: <code>nmcli</code> and <code>connman</code>. If you are using the CHIP OS that comes installed on CHIP, or you have flashed with our Debian distribution, you&apos;ll want to use the first section about connecting with <code>nmcli</code>. If you have flashed CHIP with our buildroot OS, you&apos;ll need to use <code>connman</code>.</p>
+<h3 id="connecting-chip-to-wifi-with-nmcli">Connecting C.H.I.P. to Wi-Fi with nmcli</h3>
+<p>There are several tools in Linux for connecting and configuring networks. We will be using the command nmcli (Network Manager Client). You may see other tutorials that reference iw or iwconfig, however, these tools are not recommended for C.H.I.P. You can read more about nmcli on the internet.</p>
+<h4 id="requirements">Requirements</h4>
+<p>You will need one of these scenarios:</p>
+<ul>
+<li>CHIP with monitor and keyboard attached</li>
+<li><a href="#headless-chip">SSH or serial</a> connection</li>
+<li>Wireless access to internet</li>
+<li>CHIP loaded with CHIP OS or Debian</li>
+</ul>
+<h4 id="step-1-list-available-wifi-networks">Step 1: List available Wi-Fi networks</h4>
+<p>In the terminal, type</p>
+<pre><code class="lang-shell">nmcli device wifi list
+</code></pre>
+<p>The output will list available access points</p>
+<pre><code class="lang-shell">*  SSID      MODE   CHAN  RATE       SIGNAL  BARS  SECURITY  
+*  NextThing HQ    Infra  11    54 Mbit/s  100     &#x2582;&#x2584;&#x2586;&#x2588;  --        
+   NextThing Shop  Infra  6     54 Mbit/s  30      &#x2582;___  WPA1 WPA2 
+   2WIRE533        Infra  10    54 Mbit/s  44      &#x2582;&#x2584;__  WPA1 WPA2
+</code></pre>
+<h4 id="step-2-connect-to-a-network">Step 2: Connect to a network</h4>
+<p>You can connect to password -protected or open access points.</p>
+<h5 id="a-no-password">A: No Password</h5>
+<p>To connect to an open network with no password, use this command:</p>
+<pre><code class="lang-shell">sudo nmcli device wifi connect &apos;(your wifi network name/SSID)&apos; ifname wlan0
+</code></pre>
+<p>These commands will respond with information about the connection.</p>
+<h5 id="b-password-protected">B: Password Protected</h5>
+<p>To connect to a password protected network, use this command, inserting your own network name and password:</p>
+<pre><code class="lang-shell">sudo nmcli device wifi connect &apos;(your wifi network name/SSID)&apos; password &apos;(your wifi password)&apos; ifname wlan0
+</code></pre>
+<h4 id="step-3-test-your-connection">Step 3: Test your Connection</h4>
+<p>You can verify and test your wireless network connection.</p>
+<h5 id="verify">Verify</h5>
+<p>You can verify your connection using the command</p>
+<pre><code class="lang-shell">nmcli device status
+</code></pre>
+<p>which outputs a list of the various network devices and their connections. For example, a successful connection would look like this:</p>
+<pre><code class="lang-shell">DEVICE   TYPE      STATE         CONNECTION 
+wlan0    wifi      connected     NextThing HQ   
+wlan1    wifi      disconnected  --         
+ip6tnl0  ip6tnl    unmanaged     --         
+lo       loopback  unmanaged     --         
+sit0     sit       unmanaged     --
+</code></pre>
+<p>Because it is worth knowing that Linux offers many ways of doing things, another command that shows your current active connection is</p>
+<pre><code class="lang-shell">nmcli connection show --active
+</code></pre>
+<p>which outputs like so:</p>
+<pre><code class="lang-shell">NAME  UUID                                  TYPE             DEVICE 
+NTC   59962bac-3441-437b-94ea-bf31dee66e8f  802-11-wireless  wlan0
+</code></pre>
+<p>After you have connected once, your C.H.I.P. will automatically connect to this network next time you reboot (or start NetworkManager services).</p>
+<h5 id="test">Test</h5>
+<p>Finally, you can test your connection to the internet with <code>ping</code>. Google&apos;s DNS server at the IP address 8.8.8.8 is probably the most reliable computer on the internet, so:</p>
+<pre><code class="lang-shell">ping -c 4 8.8.8.8
+</code></pre>
+<p>results in output like:</p>
+<pre><code class="lang-shell">64 bytes from 8.8.8.8: icmp_seq=1 ttl=55 time=297 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=55 time=26.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=55 time=24.8 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=55 time=55.7 ms
+</code></pre>
+<p>You can stop this command by pressing CTRL-C on your keyboard. The <code>-c 4</code> option means it will happen only 4 times.</p>
+<p>Congratulations! You are now network with CHIP!</p>
+<h4 id="step-4-disconnecting-and-forgetting-networks">Step 4: Disconnecting and Forgetting Networks</h4>
+<p>The command to disconnect from a wireless device needs a few parameters:</p>
+<pre><code class="lang-shell">sudo nmcli dev disconnect wlan0
+</code></pre>
+<p>You may want to prevent auto-connection to a network, so you can use this command to &quot;forget&quot; a network:</p>
+<pre><code class="lang-shell">sudo nmcli connection delete id  (your wifi network name/SSID)
+</code></pre>
+<h4 id="troubleshooting">Troubleshooting</h4>
+<p>Here are a few possible problems with connections.</p>
+<h5 id="no-network-found">No network found</h5>
+<p>Not much to say about that. If there&apos;s no network, you can&apos;t connect. Go find a network!</p>
+<h5 id="incorrect-password">Incorrect password</h5>
+<p>If you type in the wrong password, you&apos;ll get some errors like this:</p>
+<pre><code class="lang-shell">[32258.690000] RTL871X: rtw_set_802_11_connect(wlan0) fw_state=0x00000008
+[32258.800000] RTL871X: start auth
+[32263.720000] RTL871X: rtw_set_802_11_connect(wlan0) fw_state=0x00000008
+[32263.820000] RTL871X: start auth
+[32264.430000] RTL871X: auth success, start assoc
+[32269.850000] RTL871X: rtw_set_802_11_connect(wlan0) fw_state=0x00000008
+[32269.970000] RTL871X: start auth
+Error: Timeout 90 sec expired.
+</code></pre>
+<p>Try connecting again with the correct password.</p>
+<h5 id="failed-ping">Failed ping</h5>
+<p>If you don&apos;t have access to the internet, your ping to an outside IP will fail. 
+It is possible that you can connect to a wireless network, but have no access to the internet, so you&apos;d see a connection when you request device status, but have a failed ping. This indicates a problem or restriction with the router or the access point, not a problem with the CHIP.</p>
+<p>A failed ping looks something like:</p>
+<pre><code class="lang-shell">From 192.168.2.56 icmp_seq=14 Destination Host Unreachable
+From 192.168.2.56 icmp_seq=15 Destination Host Unreachable
+From 192.168.2.56 icmp_seq=16 Destination Host Unreachable
+18 packets transmitted, 0 received, +9 errors, 100% packet loss, time 17013ms
+pipe 4
+</code></pre>
+<h5 id="loss-of-wireless-network">Loss of wireless network</h5>
+<p>A sudden, unplanned disconnection will post an error in the terminal window, for example:</p>
+<pre><code class="lang-shell">[30863.880000] RTL871X: linked_status_chk(wlan0) disconnect or roaming
+</code></pre>
+<p>The Network Manager will periodically try to reconnect. If the access point is restored, you&apos;ll get something like this in your terminal window:</p>
+<pre><code class="lang-shell">[31798.970000] RTL871X: rtw_set_802_11_connect(wlan0)
+[31799.030000] RTL871X: start auth
+[31799.040000] RTL871X: auth success, start assoc
+[31799.050000] RTL871X: rtw_cfg80211_indicate_connect(wlan0) BSS not found !!
+[31799.060000] RTL871X: assoc success
+</code></pre>
+<h5 id="nmcli-not-installed-error">nmcli not installed error</h5>
+<p>If you try to use <code>nmcli</code> and you get an error that it is not found or is not a command, chances are that you are using the CHIP buildroot image. The <code>nmcli</code> commands only apply to CHIPs running CHIP OS or Debian linux.</p>
+<h3 id="connecting-chip-to-a-wireless-network-with-connman">Connecting C.H.I.P. to a Wireless Network With connman</h3>
+<p>The buildroot operating system uses the <code>connman</code> command-line network manager to connect and manage your network connections. If you are using CHIP OS (or Debian), you will find that <code>connman</code> is not installed - you&apos;ll need to <a href="#connecting-c-h-i-p-to-wi-fi-with-nmcli">use  nmcli</a>.</p>
+<p>If you want all the details of <code>connman</code> <a href="https://wiki.archlinux.org/index.php/Connman" target="_blank">visit the ArchLinux wiki.</a></p>
+<h4 id="requirements">Requirements</h4>
+<ul>
+<li>CHIP running buildroot OS</li>
+<li>One of the following:<ul>
+<li>Keyboard and monitor for CHIP</li>
+<li><a href="#headless-chip">Serial connection</a> to CHIP</li>
+</ul>
+</li>
+</ul>
+<h4 id="step-1-enable-wifi-and-find-a-network">Step 1: Enable WiFi and Find a Network</h4>
+<p>These three commands will, in turn, enable wifi, scan for access points, and see what networks are available:</p>
+<pre><code class="lang-shell">  connmanctl enable wifi
+  connmanctl scan wifi
+  connmanctl services
+</code></pre>
+<p>The <code>services</code> command has output similar to:</p>
+<pre><code class="lang-shell">*AO 
+    NTC                  wifi_7cc70905cd77_4e5443_managed_psk
+                         wifi_7cc70905cd77_hidden_managed_psk
+    NTC Guest            wifi_7cc70905cd77_4e5443204775657374_managed_psk
+                         wifi_7cc70905cd77_hidden_managed_none
+    ATT312               wifi_7cc70905cd77_415454333132_managed_psk
+    HP-Print-99-LaserJet 1102 wifi_7cc70905cd77_48502d5072696e742d39392d4c617365724a65742031313032_managed_none
+    ATT344               wifi_7cc70905cd77_415454333434_managed_psk
+    CBCI-1B57-2.4        wifi_7cc70905cd77_434243492d314235372d322e34_managed_psk
+    mi-fi                wifi_7cc70905cd77_6d692d6669_managed_none
+    0024A5D8CF33         wifi_7cc70905cd77_303032344135443843463333_managed_psk
+    Twirl-Eco-Events-2.4 wifi_7cc70905cd77_547769726c2d45636f2d4576656e74732d322e34_managed_psk
+    xfinitywifi          wifi_7cc70905cd77_7866696e69747977696669_managed_none
+</code></pre>
+<h4 id="step-2-connect-to-an-access-point">Step 2: Connect To An Access Point</h4>
+<p>Unfortunately, connman doesn&apos;t use the nice name on the left of the services list. It wants the unfriendly string on the right, so you&apos;ll want to get copy and paste ready.</p>
+<h5 id="a-no-password">A: No Password</h5>
+<p>For example, to connect to NTC Guest, which has no password, <code>services</code> shows two choices. We want the one without &#x201C;hidden&#x201D; in the string. Use the connect command to connect:</p>
+<pre><code class="lang-shell">  connmanctl connect wifi_7cc70905cd77_4e5443204775657374_managed_psk
+</code></pre>
+<p>If your network is not password protected, you&apos;ll get some output that will indicate a successful connection, such as:</p>
+<pre><code class="lang-shell">[  961.780000] RTL871X: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+[  962.070000] RTL871X: start auth
+[  962.080000] RTL871X: auth success, start assoc
+[  962.090000] RTL871X: rtw_cfg80211_indicate_connect(wlan0) BSS not found !!
+[  962.100000] RTL871X: assoc success
+[  962.110000] RTL871X: send eapol packet
+[  962.290000] RTL871X: send eapol packet
+[  962.300000] RTL871X: set pairwise key camid:4, addr:0a:18:d6:97:2d:26, kid:0, type:AES
+[  962.320000] RTL871X: set group key camid:5, addr:0a:18:d6:97:2d:26, kid:1, type:AES
+</code></pre>
+<p>If your network is password protected, you&apos;ll get an error.</p>
+<h5 id="b-passwordprotected">B: Password-Protected</h5>
+<p>To deal with passwords, you&apos;ll need to put <code>connman</code> into interactive mode:</p>
+<pre><code class="lang-shell">  connmanctl
+</code></pre>
+<p>which gives a connmanctl prompt:</p>
+<pre><code class="lang-shell">  connmanctl&gt;
+</code></pre>
+<p>In the shell, turn the &apos;agent&apos; on so it can process password requests:</p>
+<pre><code class="lang-shell">  agent on
+</code></pre>
+<p>and now use the connect command (your network name will be different than what&apos;s below of course)</p>
+<pre><code class="lang-shell">  connect wifi_7cc70905cd77_4e5443_managed_psk
+</code></pre>
+<p>and enter your password when prompted:</p>
+<pre><code class="lang-shell">  Agent RequestInput wifi_7cc70905cd77_4e5443_managed_psk
+  Passphrase = [ Type=psk, Requirement=mandatory ]
+  Passphrase?
+</code></pre>
+<p>Now that you are connected to a wireless network, you can exit connmanctl interactive mode by typing</p>
+<pre><code class="lang-shell">  quit
+</code></pre>
+<h6 id="all-the-commands-in-one-place">All The Commands In One Place</h6>
+<p>Here&apos;s all the commands in one place:</p>
+<pre><code class="lang-shell">  connmanctl
+  agent on
+  connect wifi_7cc70905cd77_4e5443_managed_psk
+  quit
+</code></pre>
+<h4 id="step-3-test-connection">Step 3: Test Connection</h4>
+<p>In CHIP&apos;s command line, you can ping Google four times:</p>
+<pre><code class="lang-shell">  ping -c 4 8.8.8.8
+</code></pre>
+<p>and expect ping to output some timing messages like:</p>
+<pre><code class="lang-shell">PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: seq=0 ttl=55 time=209.147 ms
+64 bytes from 8.8.8.8: seq=1 ttl=55 time=111.125 ms
+64 bytes from 8.8.8.8: seq=2 ttl=55 time=183.627 ms
+64 bytes from 8.8.8.8: seq=3 ttl=55 time=147.398 ms
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max = 111.125/162.824/209.147 ms
+</code></pre>
+<p>If your connection is not successful, then ping will tell you your network is down:</p>
+<pre><code class="lang-shell">PING 8.8.8.8 (8.8.8.8): 56 data bytes
+ping: sendto: Network is unreachable
+</code></pre>
+<h5 id="troubleshooting-connection-problems">Troubleshooting Connection Problems</h5>
+<ul>
+<li>You&apos;ll need to make sure you used the right network when you used the connect commnand. </li>
+<li>Review any messages that the connect commnand gave you. Did they look like the examples of a successful connection? </li>
+<li>If everything checked out until you got to <code>ping</code>, there&apos;s a good chance the problem is with your router or connection to the internet.</li>
+</ul>
+<h5 id="connman-not-installed-error">connman not installed error</h5>
+<p>If you try to use <code>connman</code> and you get an error that it is not found or is not a command, chances are that you are using the CHIP OS or Debian image. The <code>connman</code> commands only apply to CHIPs running the simple buildroot OS.</p>
+<h4 id="step-4-disconnecting-and-forgetting-networks">Step 4: Disconnecting And Forgetting Networks</h4>
+<p>To disconnect from your network, you might first want a reminder of what unfriendly string is used to describe your access point, so type:</p>
+<pre><code class="lang-shell">  connmanctl services
+</code></pre>
+<p>which will output information about your current link:</p>
+<pre><code class="lang-shell">  *AO NTC                  wifi_7cc70905cd77_4e5443_managed_psk
+</code></pre>
+<p>Use the ID to disconnect:</p>
+<pre><code class="lang-shell">  connmanctl disconnect wifi_7cc70905cd77_4e5443_managed_psk
+</code></pre>
+<p>and you&apos;ll get some status like this:</p>
+<pre><code class="lang-shell">[  301.890000] RTL871X: clear key for addr:0a:18:d6:97:2d:26, camid:4
+[  301.900000] RTL871X: clear key for addr:0a:18:d6:97:2d:26, camid:5
+[  301.920000] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+Disconnected wifi_7cc70905cd77_4e5443_managed_psk
+</code></pre>
+<p>Generally, <code>conman</code> will remember and cache setup information - if you reboot in the vicinity of a known network, it will attempt to connect. However, if you need to forget a network setup, these setups can be found by navigating:</p>
+<pre><code class="lang-shell">  cd /var/lib/connman/
+</code></pre>
+<p>You can delete a single connection by seeing what connections are stored</p>
+<pre><code class="lang-shell">  ls /var/lib/connman/
+</code></pre>
+<p>and then delete a setup that you find, for example</p>
+<pre><code class="lang-shell">  rm -r wifi_7cc70905cd77_4e5443_managed_psk
+</code></pre>
+<p>You can delete all the &#x201C;wifi&#x201D; directories with</p>
+<pre><code class="lang-shell">  rm -r wifi*
+</code></pre>
+<p>(the <code>-r</code> is needed because these are directories you are deleting, and the star at the end of <code>wifi*</code> assumes your configurations all start with the string &#x201C;wifi&#x201D;)</p>
+<h4 id="for-advanced-users">For Advanced Users</h4>
+<p>It&apos;s worth noting that you&apos;ll see two wireless networking interfaces if you list them with</p>
+<pre><code class="lang-shell">  ifconfig
+</code></pre>
+<p><code>connman</code> is configured to see only the physical interface wlan0 which simplifies setup. We do this with a blacklist, which can be modified at <code>/etc/connman/main.conf</code></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../s007_advanced/setup_ubuntu_for_flashing.html" class="navigation navigation-prev " aria-label="Previous page: Setup Ubuntu For Flashing"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../s007_advanced/configure_sound_output_on_debian.html" class="navigation navigation-next " aria-label="Next page: Configure Sound Output on Debian"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
