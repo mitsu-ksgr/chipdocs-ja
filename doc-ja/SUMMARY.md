@@ -16,7 +16,7 @@
     * [USBストレージ](s003_connecting_accessories/usb_storage.md)
     * [USBオーディオ](s003_connecting_accessories/usb_audio.md)
     * [バッテリーと充電](s003_connecting_accessories/battery_and_charging.md)
-* [Using The CHIP Operating System](s004_using_the_chip_operating_system/README.md)
+* [CHIP OS を利用する](s004_using_the_chip_operating_system/README.md)
     * [Settings and Configuration](s004_using_the_chip_operating_system/settings_and_configuration.md)
     * [Launching Installed Apps](s004_using_the_chip_operating_system/launching_installed_apps.md)
     * [Install and Update Software](s004_using_the_chip_operating_system/install_and_update_software.md)

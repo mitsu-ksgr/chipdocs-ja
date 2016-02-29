@@ -4,7 +4,7 @@
 > Just select a network to initiate a connection.  
 > If the network requires a password you’ll be prompted for it.
 
-WiFiネットワークに接続するのは、右上のシステムトレイにあるWiFiアイコンを使えば簡単です。
+WiFiネットワークに接続するのは、右上のシステムトレイにある無線LANアイコンを使えば簡単です。
 ネットワークを選択し、接続を開始します。  
 ネットワーク接続にパスワードが必要な場合は、それを求めるメッセージが表示されます。
 
@@ -14,6 +14,7 @@ WiFiネットワークに接続するのは、右上のシステムトレイに�
 > Double click on a connection to bring up the connection editor:
 
 ネットワーク接続をより詳細に制御するために情報が必要な場合は、[設定]>[ネットワーク接続]パネルで表示できます。
+接続先をダブルクリックして、コネクション・エディタを表示します。
 
 ![Network connection editor](./../images/screen_networksettings.jpg)
 
