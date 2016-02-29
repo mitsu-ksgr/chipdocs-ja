@@ -1,3 +1,5 @@
 [submodule "origin"]
 	path = origin
-	url = git@github.com:getchip/chipdocs.git
+    url = https://github.com/getchip/chipdocs.git
+
+
