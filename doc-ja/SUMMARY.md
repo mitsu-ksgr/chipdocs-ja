@@ -18,7 +18,7 @@
     * [バッテリーと充電](s003_connecting_accessories/battery_and_charging.md)
 * [CHIP OS を利用する](s004_using_the_chip_operating_system/README.md)
     * [設定と構成](s004_using_the_chip_operating_system/settings_and_configuration.md)
-    * [Launching Installed Apps](s004_using_the_chip_operating_system/launching_installed_apps.md)
+    * [インストールしたアプリの起動](s004_using_the_chip_operating_system/launching_installed_apps.md)
     * [Install and Update Software](s004_using_the_chip_operating_system/install_and_update_software.md)
     * [Uninstall Software](s004_using_the_chip_operating_system/uninstall_software.md)
     * [Boot into Console](s004_using_the_chip_operating_system/boot_into_console.md)
