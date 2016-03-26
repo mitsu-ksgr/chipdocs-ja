@@ -24,7 +24,7 @@
     * [Boot into Console](s004_using_the_chip_operating_system/boot_into_console.md)
 * [CHIP ハードウェア](s005_chip_hardware/README.md)
     * [パーツと部品](s005_chip_hardware/parts_and_pieces.md)
-    * [Wireless](s005_chip_hardware/wireless.md)
+    * [無線機器](s005_chip_hardware/wireless.md)
     * [Physical Connectors](s005_chip_hardware/physical_connectors.md)
     * [Open Source Hardware: Where To Get It](s005_chip_hardware/open_source_hardware_where_to_get_it.md)
 * [Making Stuff](s006_making_stuff/README.md)
