@@ -1,20 +1,72 @@
-## Physical Connectors
-CHIP is loaded with essential connectors for USB, serial, audio, video, and loads of IO on the pin headers. Oh, and a button too!
-### Button
-There is a tiny tiny button on CHIP next to pin header U13 that is used for turning CHIP on or off. If CHIP is off and connected to a power source, hold down the button for one second to power it up. To turn CHIP off (rather brutally), hold the button for 10 seconds. We recommend using the operating system to power CHIP off, but if you need to, you can use this button.
+## 物理コネクタ
+
+> ### Physical Connectors
+> CHIP is loaded with essential connectors for USB, serial, audio, video, and loads of IO on the pin headers. Oh, and a button too!
+
+CHIPは、USB、シリアル、オーディオ、ビデオ、そしてピンヘッダ上にあるたくさんのIOのために必要なコネクタをロードします。あ、ボタンもね！
+
+### ボタン
+> #### Button
+> There is a tiny tiny button on CHIP next to pin header U13 that is used for turning CHIP on or off.
+> If CHIP is off and connected to a power source, hold down the button for one second to power it up.
+> To turn CHIP off (rather brutally), hold the button for 10 seconds.
+> We recommend using the operating system to power CHIP off, but if you need to, you can use this button.
+
+U13ピンヘッダに接しているCHIP上の小さな小さなボタンは、CHIPのON/OFFを切り替えるために使われます。
+CHIPがオフの状態で電源に接続されているとき、ボタンを１秒間押し続けることで、電源オンにすることが出来ます。
+CHIPをオフにするには（どちらかと言えば悪い方法だけど）、ボタンを10秒間押し続けます。
+OSを介してCHIPの電源を切る事をオススメしますが、そうする必要がある場合は、このボタンを使うことが出来ます。
+
 ### USB
-The single USB port on CHIP is USB 2.0 compatible. It can provide up to 500mA of current, as is standard for USB ports on computers. If you need to provide more current, we recommend a powered USB hub. 
+> #### USB
+> The single USB port on CHIP is USB 2.0 compatible.
+> It can provide up to 500mA of current, as is standard for USB ports on computers.
+> If you need to provide more current, we recommend a powered USB hub. 
+
+CHIP上にあるただ１つのUSBポートは、USB 2.0の互換性があります。
+それは500mAの電流を提供することができ、コンピュータ上のUSBポートの標準になります。
+より多くの電流を供給する必要がある場合は、電源付きUSBハブを使用することをお勧めします。
+
 ### USB On The Go
-The micro USB port is generally used to provide power for CHIP. However, since CHIP can be powered through the pin headers or a battery, this port can be used for different things. 
-By default, connecting CHIP's micro USB to a computer will create a USB Serial connection, so you can access CHIP with a `screen` or `cu` session in a terminal. With Linux kernel modifications, it is possible to enable other modes, such as an Ethernet bridge.
-### Composite Video and Stereo Audio
-The 1/8" [TRRS connector](#about-the-trrs-connector) provides composite video and stereo audio output. Headphones can be plugged in for audio only.
+> #### USB On The Go
+> The micro USB port is generally used to provide power for CHIP.
+> However, since CHIP can be powered through the pin headers or a battery, this port can be used for different things. 
+> By default, connecting CHIP's micro USB to a computer will create a USB Serial connection, so you can access CHIP with a `screen` or `cu` session in a terminal.
+> With Linux kernel modifications, it is possible to enable other modes, such as an Ethernet bridge.
 
-Audio Input uses the same connection on the TRRS connector as the composite video signal. If you want to make audio input active on the TRRS connector, you need to [cut a circuit board trace](#microphone-and-audio-input). This is not as permanent as it sounds, as it is easy to re-enable composite video out with a small amount of soldering.
-### Pin Headers
-The Pin Headers provide a massive amount of connectivity, making CHIP a suitable platform for product development for physical computing and "internet of things" devices. Here's a basic diagram that labels all the pins:
+マイクロUSBポートは、一般的にCHIPに電力を供給するために使用されます。
+しかしながらCHIPは、ピンヘッダやバッテリーを介して電力を供給することが出来るため、このポートは、別のモノのために使用することもできます。
+USBシリアル接続をが出来るコンピュータに、チップのマイクロUSBを接続し、ターミナルで`screen`または`cu`セッションを使用すれば、CHIPにアクセス出来ます。
+Linuxカーネルを変更することで、イーサネット・ブリッジなどの他のモードを有効にすることが可能です。
 
-![CHIP pinout](images/chip_pinouts.jpg)
+
+### コンポジット・ビデオとステレオ・オーディオ
+> #### Composite Video and Stereo Audio
+> The 1/8" [TRRS connector](#about-the-trrs-connector) provides composite video and stereo audio output.
+> Headphones can be plugged in for audio only.
+> 
+> Audio Input uses the same connection on the TRRS connector as the composite video signal.
+> If you want to make audio input active on the TRRS connector, you need to [cut a circuit board trace](#microphone-and-audio-input).
+> This is not as permanent as it sounds, as it is easy to re-enable composite video out with a small amount of soldering.
+
+3.5mm(1/8")の[TRRSコネクタ](http://docs.getchip.com/#about-the-trrs-connector)は、コンポジット・ビデオとステレオ・オーディオ出力を提供します。
+ヘッドフォンは、音声のみのために接続することができます。
+
+音声入力は、コンポジットビデオ信号としてのTRRSコネクタと同じ接続を使用します。
+TRRSコネクタの音声入力を有効にしたい場合は、[回路基板トレースを切断](http://docs.getchip.com/#microphone-and-audio-input)する必要があります。
+これは言うほど永続的なものではなく、少し半田付けするだけで、簡単にコンポジット・ビデオ出力を再度有効にすることが出来ます。
+
+
+
+### ピンヘッダ
+> #### Pin Headers
+> The Pin Headers provide a massive amount of connectivity, making CHIP a suitable platform for product development for physical computing and "internet of things" devices.
+> Here's a basic diagram that labels all the pins:
+
+ピンヘッダは、膨大な量の接続性を提供しており、フィジカルコンピューティングの製品開発やIoTデバイスに適したプラットフォームとして、CHIPを構成しています。  
+以下は、全ピンのラベルを表した基本図です: 
+
+![CHIP pinout](./../images/chip_pinouts.jpg)
 
 U13L | U13R | U14L | U14R
 ------|------|------|------
@@ -39,6 +91,7 @@ LCD-CLK : RGB666 clock | LCD-D23 : RGB666 data | CSID4 : CMOS serial interface |
 LCD-VSYNC : vertical sync for LCD screen | LCD-HSYNC : horizontal sync for LCD | CSID6 : CMOS serial interface | CSID7 : CMOS serial interface
 GND : ground | LCD-DE : RGB666 data | GND : ground | GND : ground
 
-(*)The XIO GPIO pins are provided by an I2C Expander at address 0x38 on the TWI bus 2, as such, this address is not available on bus 2.
+> (*)The XIO GPIO pins are provided by an I2C Expander at address 0x38 on the TWI bus 2, as such, this address is not available on bus 2.
 
+(*) XIO GPIOピンは、TWIバス2上のアドレス0x38でのI2Cエクスパンダにより提供されているので、それ自体では、このアドレスはバス2上では使用できません。
 
